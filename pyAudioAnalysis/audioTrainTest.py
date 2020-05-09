@@ -14,8 +14,6 @@ from scipy.spatial import distance
 import sklearn.svm
 import sklearn.decomposition
 import sklearn.ensemble
-import plotly
-import plotly.graph_objs as go
 import sklearn.metrics
 
 
