@@ -333,13 +333,13 @@ def extract_features_and_train(paths, mid_window, mid_step, short_window,
     if classifier_type == "svm" or classifier_type == "svm_rbf":
         classifier_par = np.array([0.001, 0.01,  0.5, 1.0, 5.0, 10.0, 20.0])
     elif classifier_type == "randomforest":
-        classifier_par = np.array([10, 25, 50, 100, 200, 500])
+        classifier_par = np.array([10, 25, 50]) #100, 200, 500
     elif classifier_type == "knn":
         classifier_par = np.array([1, 3, 5, 7, 9, 11, 13, 15])        
     elif classifier_type == "gradientboosting":
-        classifier_par = np.array([10, 25, 50, 100, 200, 500])
+        classifier_par = np.array([10, 25, 50]) #100, 200, 500
     elif classifier_type == "extratrees":
-        classifier_par = np.array([10, 25, 50, 100, 200, 500])
+        classifier_par = np.array([10, 25, 50]) #100, 200, 500
 
     # get optimal classifeir parameter:
     temp_features = []
