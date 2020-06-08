@@ -3,7 +3,6 @@ import os
 import glob
 import aifc
 import numpy
-import eyed3
 import ntpath
 import shutil
 import numpy as np
